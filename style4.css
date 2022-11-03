@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #C5F8FF;
+}
+
+.navbar {
+    z-index: 3;
+    margin-top: 0%;
+}
+
+#form {
+    margin: 0 30%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    background: rgb(55, 190, 228);
+    color: white;
+    margin-top: 210px;
+    
+}
+
+.footer .container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+/* Desktop version */
+@media (min-width: 992px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover {
+        color: #f6f6f6;
+        background-color: #ddd;
+    }  
+
+}

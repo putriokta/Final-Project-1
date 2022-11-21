@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            background-color: #e9e9e9;
+            
+        }
+
+        ul {
+            float: right;
+            position: relative;
+            display: flex;
+        }
+        li {
+            display: block;
+            padding: 20px 10px;
+            margin: 0%;
+            
+        }
+
+        section {
+            width: 100%;
+            height: 90vh;
+
+        }
+
+        nav {
+            align-items: center;
+            height: 9vh;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 2);
+            padding: 0px 4%;
+            font-size: 12px;
+        }
+
+        nav a {
+            color: #505050;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 15px 5px;    
+        }
+
+
+        nav a:hover {
+            color: #f6f6f6;
+            background-color: #ddd;
+            
+        }
+        .logo {
+            width: 90%;
+            height: 195px;
+            background-color: #FFFFFF;
+            border-radius: 0px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 2);
+            
+            display: flex;
+            margin: -8% auto 15px auto;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .logo img {
+            height: 160px;
+            margin-top: 25px;
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .container {
+            margin-top: 25px;
+        }
+
+        .content {
+            margin-top: 27px;
+            margin-left: 150px;
+        }
+
+        .text-container {
+            margin-top: 27px;
+            margin-left: 75px;
+        }
+        
+        button[type=kontak] {
+            background-color: #0b53a4;
+            color: white;
+            padding: 11px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type=kontak]:hover {
+            background-color: #5b70a1;
+        }
+
+        button[type=resume] {
+            background-color: #fdfdfe;
+            color: rgb(0, 0, 0);
+            padding: 9px 14px;
+            margin: 5px 0;
+            border: 9px 9px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type=resume]:hover {
+            background-color: #acb8d5;
+        }
+
+        .label {
+            margin: auto;
+            font-size: 15px;
+            width: 90%;
+            background-color: #FFFFFF;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 2);
+            margin: -8% auto 15px auto;
+            margin-top: 5px;
+        }
+
+        button[id=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 7px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+        }  
+        input[type=text], select {
+            width: 100%;
+            padding: 5px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=number], select {
+            width: 100%;
+            padding: 5px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=email], select {
+            width: 100%;
+            padding: 5px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#inventory">MY INVENTORY</a></li>
+            </ul> <br/>
+        </nav>
+        
+        <div class="logo" id="profile">
+            <img src="Annotation 2022-08-18 214912.png" alt="">
+            <div class="container">
+                <h1 id="nama32">Putri Oktatriani</h1> <br/>
+                <p id="role32">Web Developer Program</p><br/><br/><br/>
+                <button type="kontak">Kontak</button>
+                <button type="resume">Resume</button>
+            </div>
+            <div class="content">
+                <b><p>Availability</p></b> <br/>
+                <b><p>Usia</p></b> <br/>
+                <b><p>Lokasi</p></b> <br/>
+                <b><p>Pengalaman</p></b> <br/>
+                <b><p>Email</p></b> <br/>
+            </div>  
+            <div class="text-container">
+                <p id="avail32">Full Time</p> <br/>
+                <p id="umur32">21</p> <br/>
+                <p id="lokasi32">Balikpapan, Indonesia</p> <br/>
+                <p id="pengalaman">2</p> <br/>
+                <p id="email32">11201075@student.itk.ac.id</p> <br/>
+            </div> 
+        </div> <br/>
+    
+
+        <div class="label">
+            <b>
+                <form action="">
+                    <label for="nama">Nama</label> <br/> <input type="text" name="nama" id="nama" /> 
+                    <br/> <br/>
+                    <label for="role">Role</label> <br/> <input type="text" name="role" id="role"/>
+                    <br/> <br/>
+                    <label for="availability">Availability</label> <br/> <input type="text" name="availability" id="availability"/>
+                    <br/> <br/>
+                    <label for="age">Age</label> <br/> <input type="text" name="age" id="age"/>
+                    <br/> <br/>
+                    <label for="lokasi">Lokasi</label> <br/> <input type="text" name="lokasi" id="lokasi"/>
+                    <br/> <br/>
+                    <label for="years">Years Experience</label> <br/> <input type="text" name="years" id="years"/>
+                    <br/> <br/>
+                    <label for="email">Email</label> <br/> <input type="text" name="email" id="email"/>
+                    <br/><br/>
+                    <button id="submit" onclick="Testing()">submit</button>
+                </form>
+            </b>
+        </div>
+    </section>
+</body>
+</html>
